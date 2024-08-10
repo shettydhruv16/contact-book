@@ -1,0 +1,163 @@
+/* Import Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+/* General styles */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2196f3; /* Blue accent color */
+  font-family: 'Roboto Slab', serif; /* New creative font */
+  font-size: 2.5em; /* Adjust size if needed */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button, .modal-button {
+  background-color: #2196f3; /* Blue accent color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, .modal-button:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+}
+
+ul.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+li.contact-item {
+  background-color: #1e1e1e;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details {
+  margin-right: 20px; /* Space between contact details and social links */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Spacing between icons */
+}
+
+.social-links a {
+  font-size: 20px;
+  transition: opacity 0.3s;
+}
+
+.social-links .fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+.social-links .fa-facebook-f {
+  color: #1877F2; /* Facebook blue */
+}
+
+.social-links .fa-instagram {
+  color: #E4405F; /* Instagram pink */
+}
+
+.social-links a:hover {
+  opacity: 0.8; /* Slightly fade icons on hover */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+}
+
+.action-button {
+  background-color: #2196f3; /* Blue accent color */
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+}
+
+.action-button.delete {
+  background-color: #e53935; /* Red for delete */
+}
+
+.action-button.delete:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
+
+/* Modal styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+}
+
+.ReactModal__Content {
+  background-color: #121212; /* Black background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
+.modal-input {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: calc(100% - 22px);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Space between modal buttons */
+}
+
+.modal-button.cancel {
+  background-color: #e53935; /* Red for cancel */
+}
+
+.modal-button.cancel:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
